@@ -1,0 +1,11 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 900px;
+  height: 600px;
+  background-color: aqua;
+}
