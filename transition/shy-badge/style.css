@@ -1,0 +1,47 @@
+body {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  font-weight: 700;
+  border-radius: 0;
+  border: 0;
+  color: white;
+  background-color: rgb(167, 167, 167);
+  position: relative;
+}
+
+button div {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  left: 138px;
+  bottom: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: red;
+  /* transition-delay: 0; */
+  transition-duration: 0.7s;
+  /* transition-property: all; */
+  /* transition-timing-function: linear; */
+}
+
+
+
+button:hover div{
+  transition-duration: 0.5s;
+  display: none;
+  transition-timing-function: linear;
+}
