@@ -1,124 +1,161 @@
 body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /* ----------------------------- */
 
 .mainPhoto {
-    width: 100vw;
-    height: 60vh;
-    background-image: url(./v2osk-1Z2niiBPg5A-unsplash.jpg);
-    background-position: middle;
-    background-size: cover;
-    display: flex;
-    align-items: center;
+  width: 100vw;
+  height: 60vh;
+  background-image: url(./v2osk-1Z2niiBPg5A-unsplash.jpg);
+  background-position: middle;
+  background-size: cover;
+  display: flex;
+  align-items: center;
 }
 
 .spacing {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-
+  width: 70%;
+  display: flex;
+  justify-content: center;
 }
 
 .inWords {
-    color: white;
+  color: white;
 }
 
-.inWords h1{
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-weight: 900;
-    font-size: 35px;
-
+.inWords h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 900;
+  font-size: 35px;
 }
 
 .inWords p {
-    font-weight: 400;
-    font-size: 20px;
-    margin-top: 0;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 0;
 }
 
 /* ----------------------------- */
 
 h3 {
-    font-family: lobster;
-    font-size: 30px;
-    margin-left: 40px;
-    margin-top: 90px;
+  font-family: lobster;
+  font-size: 30px;
+  margin-left: 70px;
+  margin-top: 90px;
 }
 
 /* ----------------------------- */
 
 .gallery {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.galleryPhotos {
-    width: 2100px;
-    height: 1000px;
-    /* background-color: aqua; */
-    display: flex;
-    flex-direction: row;
-    
-}
 .photos {
-    width: 95%;
-    height: 730px;
-    background-color: aqua;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
+  display: flex;
+  width: 95%;
+  height: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 25%;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.box img {
+  width: 95%;
 }
 
 .box img:hover {
-    cursor: pointer;
-    background: rgb(24, 24, 24) url(./ian-talmacs-fFj2PLjPbUQ-unsplash.jpg);
-    background-blend-mode: multiply;            /* <----------------------------------- asuudal */
+  filter: brightness(50%);
+  transition: 0.5s;
+  cursor: pointer;
 }
 
-.photo {
-    /* flex-wrap: wrap; */
-    background-color: black;
-    margin: 10px;
+button {
+  width: 40px;
+  height: 30px;
+}
+
+.bttn1 {
+  top: 30px;
+  left: 405px;
+}
+
+.bttn2 {
+  top: 30px;
+  left: 450px;
+}
+
+.bttn3 {
+  top: 300px;
+  left: 450px;
+}
+
+button img {
+  margin-top: 3px;
+  width: 10px;
+  height: 20px;
 }
 
 /* ----------------------------- */
 
 /* 3 column haragdana */
 @media screen and (max-width: 1200px) {
-    .inWords h1 {
-        font-size: 32px;
-    }
-    .inWords p {
-        font-size: 17px;
-    }
-    /* .photo4 {
-        display: inline-block;
-    } */
-
+  .inWords h1 {
+    font-size: 32px;
+  }
+  .inWords p {
+    font-size: 17px;
+  }
+  .photos {
+    gap: 5%;
+  }
+  .box {
+    width: 30%;
+  }
 }
 /* 2 column haragdana */
 @media screen and (max-width: 992px) {
-    .inWords h1 {
-        font-size: 29px;
-    }
-    .inWords p {
-        font-size: 14px;
-    }
+  .inWords h1 {
+    font-size: 29px;
+  }
+  .inWords p {
+    font-size: 14px;
+  }
+  .box {
+    width: 45%;
+  }
+  .photos {
+    display: flex;
+    justify-content: center;
+  }
+  .box img {
+    width: 100%;
+  }
 }
 
 /* 1 column haragdana */
 @media screen and (max-width: 768px) {
-        .inWords h1 {
-            font-size: 25px;
-        }
-        .inWords p {
-            font-size: 10px;
-        }
+  .inWords h1 {
+    font-size: 25px;
+  }
+  .inWords p {
+    font-size: 10px;
+  }
+  .box {
+    width: 90%;
+  }
 }
