@@ -23,25 +23,26 @@ button div {
   background-color: red;
   position: absolute;
   left: 138px;
-  bottom: 33px;
+  bottom: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 button:hover {
+
   cursor: pointer;
   background-color: red;
-  /* transition-delay: 0; */
-  transition-duration: 0.7s;
-  /* transition-property: all; */
-  /* transition-timing-function: linear; */
+  transition-duration: 1s;
 }
-
-
 
 button:hover div{
-  transition-duration: 0.5s;
-  display: none;
+
+  transition-duration: 0.7s;
+  left: 80px;
+  bottom: 23px;
   transition-timing-function: linear;
 }
+
+
+
