@@ -13,8 +13,8 @@ body {
 }
 
 .all {
-  width: 900px;
-  height: 900px;
+  width: 600px;
+  height: 600px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -22,8 +22,8 @@ body {
 }
 
 .photo {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   background-position: middle;
   background-image: url(./ray-hennessy-xUUZcpQlqpM-unsplash.jpg);
   background-size: cover;

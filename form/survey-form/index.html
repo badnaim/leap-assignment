@@ -20,85 +20,86 @@
         <p>Судалгаанд оролцсон таньд баярлалаа.</p>
       </div>
       <div class="box">
-        <div class="box1">
-          <div class="abs1">Ерөнхий мэдээлэл</div>
+        <!-- <div class="box1"> -->
+          <fieldset class="box1">
+            <legend>Ерөнхий мэдээлэл</legend>
+              <div class="space">
+                <label>Нэр</label>
+                <input type="name" id="fname" name="fname" required/>
+              </div>
+              <div class="space">
+                <label>И-Мэйл</label>
+                <input type="email" id="e-mail" name="e-mail" required/>
+              </div>
+              <div class="space">
+                <label>Нас</label>
+                <input type="number" id="age" minlength="1" maxlength="2" name="age" required/>
+              </div>
+          </fieldset>
+        <!-- </div> -->
 
-          <div class="space">
-            <label>Нэр</label>
-            <input type="name" id="fname" name="fname" required/>
+        <fieldset class="box2">
+          <legend>Social media</legend>
+            <div class="one">
+              <label class="time" for="time"
+                >Та өдөрт хэдэн цаг social media ашигладаг вэ?</label
+              >
+              <select name="time">
+                <option value="">1-2 цаг</option>
+                <option value="">2-3 цаг</option>
+                <option value="">3-4 цаг</option>
+              </select>
+            </div>
+            <div class="two">
+              <div>
+                Та онлайнаар худалдан авалт хийх, дэлгүүр орж худалдан авалт хийхийн
+                альныг илүүд үздэг вэ?
+              </div>
+              <div class="inline">
+                <input type="radio" id="online" name="shopping" value="HTML" />
+                <label for="online">Онлайнаар худалдан авалт</label>
+              </div>
+              <div class="inline">
+                <input type="radio" id="store" name="shopping" value="CSS" />
+                <label for="store">Дэлгүүр орж худалдан авалт хийх</label>
+              </div>
+            </div>
+            <div class="three">
+              <div class="socialMedia" for="socialMedia">Та ямар Social media ашигладаг вэ?</div>
+              <div class="inline">
+                <input id="neg" type="checkbox">
+                <label>Facebook</label>
+              </div>
+              <div class="inline">
+                <input id="neg" type="checkbox">
+                <label>Instagram</label>
+              </div>
+              <div class="inline">
+                <input id="neg" type="checkbox">
+                <label>Twitter</label>
+              </div>
+              <div class="inline">
+                <input id="neg" type="checkbox">
+                <label>Reddit</label>
+              </div>
+              <div class="inline">
+                <input id="neg" type="checkbox">
+                <label>Snapchat</label>
+              </div>
+              <div class="inline">
+                <input id="neg" type="checkbox">
+                <label>Quora</label>
+              </div>
+              <div class="inline">
+                <input id="neg" type="checkbox">
+                <label>Youtube</label>
+              </div>
+              <div class="inline">
+                <input id="neg" type="checkbox">
+                <label>Бусад</label>
+              </div>
           </div>
-          <div class="space">
-            <label>И-Мэйл</label>
-            <input type="email" id="e-mail" name="e-mail" required/>
-          </div>
-          <div class="space">
-            <label>Нас</label>
-            <input type="number" id="age" minlength="1" maxlength="2" name="age" required/>
-          </div>
-        </div>
-
-        <div class="box2">
-          <div class="abs2">Social media</div>
-          <div class="one">
-            <label class="time" for="time"
-              >Та өдөрт хэдэн цаг social media ашигладаг вэ?</label
-            >
-            <select name="time">
-              <option value="">1-2 цаг</option>
-              <option value="">2-3 цаг</option>
-              <option value="">3-4 цаг</option>
-            </select>
-          </div>
-          <div class="two">
-            <div>
-              Та онлайнаар худалдан авалт хийх, дэлгүүр орж худалдан авалт хийхийн
-              альныг илүүд үздэг вэ?
-            </div>
-            <div class="inline">
-              <input type="radio" id="online" name="shopping" value="HTML" />
-              <label for="online">Онлайнаар худалдан авалт</label>
-            </div>
-            <div class="inline">
-              <input type="radio" id="store" name="shopping" value="CSS" />
-              <label for="store">Дэлгүүр орж худалдан авалт хийх</label>
-            </div>
-          </div>
-          <div class="three">
-            <div class="socialMedia" for="socialMedia">Та ямар Social media ашигладаг вэ?</div>
-            <div class="inline">
-              <input id="neg" type="checkbox">
-              <label>Facebook</label>
-            </div>
-            <div class="inline">
-              <input id="neg" type="checkbox">
-              <label>Instagram</label>
-            </div>
-            <div class="inline">
-              <input id="neg" type="checkbox">
-              <label>Twitter</label>
-            </div>
-            <div class="inline">
-              <input id="neg" type="checkbox">
-              <label>Reddit</label>
-            </div>
-            <div class="inline">
-              <input id="neg" type="checkbox">
-              <label>Snapchat</label>
-            </div>
-            <div class="inline">
-              <input id="neg" type="checkbox">
-              <label>Quora</label>
-            </div>
-            <div class="inline">
-              <input id="neg" type="checkbox">
-              <label>Youtube</label>
-            </div>
-            <div class="inline">
-              <input id="neg" type="checkbox">
-              <label>Бусад</label>
-            </div>
-          </div>
-        </div>
+        </fieldset>
         <div class="box3">
           <div class="abs3">Санал хүсэлт</div>
           <input maxlength="300" name="comment" id="comment" placeholder="Санал хүсэлтээ энд бичнэ үү..."></input>

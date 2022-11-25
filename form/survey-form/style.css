@@ -49,7 +49,7 @@ body {
 
 .box {
   width: 620px;
-  height: 860px;
+  height: 895px;
   border-radius: 10px;
   background-color: rgb(120, 120, 241, 50%);
   padding: 20px 10px 10px 10px;
@@ -61,8 +61,6 @@ body {
   margin-bottom: 5px;
   margin-top: 20px;
 }
-
-
 
 .box1 {
   border: 2px groove white;
