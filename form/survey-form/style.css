@@ -49,40 +49,95 @@ body {
 
 .box {
   width: 620px;
-  height: 800px;
+  height: 860px;
   border-radius: 10px;
   background-color: rgb(120, 120, 241, 50%);
   padding: 20px 10px 10px 10px;
   position: relative;
 }
 
-label {
+.box1 label {
   display: block;
   margin-bottom: 5px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
+
+
 
 .box1 {
   border: 2px groove white;
-  padding: 20px 20px 50px 20px;
+  padding: 0 20px 30px 20px;
+  margin-bottom: 10px;
 }
 
-input {
+.space input {
   width: 568px;
+  height: 25px;
+  border: none;
+  border-radius: 3px;
+}
+
+.space input:invalid {
+  border: 2px solid red;
+}
+
+.space input:valid {
+  border: 2px solid green;
 }
 
 .abs1 {
   position: absolute;
-  background-color: rgb(120, 120, 241);
+  background-color: rgb(120, 120, 241, 50%);
   top: 10px;
 }
 
 /* --------------------------------------- */
 
 .box2 {
+  padding: 30px 20px 30px 20px;
   border: 2px groove white;
 }
 
-.box3 {
-  border: 2px groove white;
+.box2 select {
+  width: 568px;
+  height: 28px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
+
+.two {
+  margin-bottom: 20px;
+}
+.abs2 {
+  position: absolute;
+  background-color: rgb(120, 120, 241, 50%);
+  top: 280px;
+}
+
+.inline {
+  display: flex;
+}
+
+/* --------------------------------------- */
+
+.box3 {
+  
+}
+#comment {
+  width: 600px;
+  height: 100px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  padding-left: 20px;
+}
+
+.box3 button {
+  width: 620px;
+  height: 40px;
+}
+
+

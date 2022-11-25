@@ -25,44 +25,84 @@
 
           <div class="space">
             <label>Нэр</label>
-            <input type="text" id="fname" name="fname" />
+            <input type="name" id="fname" name="fname" required/>
           </div>
           <div class="space">
             <label>И-Мэйл</label>
-            <input type="text" id="e-mail" name="e-mail" />
+            <input type="email" id="e-mail" name="e-mail" required/>
           </div>
           <div class="space">
             <label>Нас</label>
-            <input type="text" id="age" name="age" min="14" max="99" />
+            <input type="number" id="age" minlength="1" maxlength="2" name="age" required/>
           </div>
         </div>
 
         <div class="box2">
           <div class="abs2">Social media</div>
-
-          <label class="hoyr" for="age"
-            >Та өдөрт хэдэн цаг social media ашигладаг вэ?</label
-          >
-          <select name="age">
-            <option value="">1-2</option>
-            <option value="">2-3</option>
-            <option value="">3-4</option>
-          </select>
-          <div>
-            Та онлайнаар худалдан авалт хийх, дэлгүүр орж худалдан авалт хийхийн
-            альныг илүүд үздэг вэ?
+          <div class="one">
+            <label class="time" for="time"
+              >Та өдөрт хэдэн цаг social media ашигладаг вэ?</label
+            >
+            <select name="time">
+              <option value="">1-2 цаг</option>
+              <option value="">2-3 цаг</option>
+              <option value="">3-4 цаг</option>
+            </select>
           </div>
-          <div>
-            <label for="html">Онлайнаар худалдан авалт</label>
-            <input type="radio" id="html" name="fav_language" value="HTML" />
+          <div class="two">
+            <div>
+              Та онлайнаар худалдан авалт хийх, дэлгүүр орж худалдан авалт хийхийн
+              альныг илүүд үздэг вэ?
+            </div>
+            <div class="inline">
+              <input type="radio" id="online" name="shopping" value="HTML" />
+              <label for="online">Онлайнаар худалдан авалт</label>
+            </div>
+            <div class="inline">
+              <input type="radio" id="store" name="shopping" value="CSS" />
+              <label for="store">Дэлгүүр орж худалдан авалт хийх</label>
+            </div>
           </div>
-          <div>
-            <label for="css">Дэлгүүр орж худалдан авалт</label>
-            <input type="radio" id="css" name="fav_language" value="CSS" />
+          <div class="three">
+            <div class="socialMedia" for="socialMedia">Та ямар Social media ашигладаг вэ?</div>
+            <div class="inline">
+              <input id="neg" type="checkbox">
+              <label>Facebook</label>
+            </div>
+            <div class="inline">
+              <input id="neg" type="checkbox">
+              <label>Instagram</label>
+            </div>
+            <div class="inline">
+              <input id="neg" type="checkbox">
+              <label>Twitter</label>
+            </div>
+            <div class="inline">
+              <input id="neg" type="checkbox">
+              <label>Reddit</label>
+            </div>
+            <div class="inline">
+              <input id="neg" type="checkbox">
+              <label>Snapchat</label>
+            </div>
+            <div class="inline">
+              <input id="neg" type="checkbox">
+              <label>Quora</label>
+            </div>
+            <div class="inline">
+              <input id="neg" type="checkbox">
+              <label>Youtube</label>
+            </div>
+            <div class="inline">
+              <input id="neg" type="checkbox">
+              <label>Бусад</label>
+            </div>
           </div>
         </div>
         <div class="box3">
           <div class="abs3">Санал хүсэлт</div>
+          <input maxlength="300" name="comment" id="comment" placeholder="Санал хүсэлтээ энд бичнэ үү..."></input>
+          <button type="submit">Илгээх</button>
         </div>
       </div>
     </div>
