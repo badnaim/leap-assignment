@@ -51,9 +51,9 @@ body {
   width: 620px;
   height: 800px;
   border-radius: 10px;
-  background-color: rgb(120, 120, 241);
+  background-color: rgb(120, 120, 241, 50%);
   padding: 20px 10px 10px 10px;
-  position: relative; 
+  position: relative;
 }
 
 label {
@@ -66,12 +66,6 @@ label {
   border: 2px groove white;
   padding: 20px 20px 50px 20px;
 }
-.box2 {
-  border: 2px groove white;
-}
-.box3 {
-  border: 2px groove white;
-}
 
 input {
   width: 568px;
@@ -81,4 +75,14 @@ input {
   position: absolute;
   background-color: rgb(120, 120, 241);
   top: 10px;
+}
+
+/* --------------------------------------- */
+
+.box2 {
+  border: 2px groove white;
+}
+
+.box3 {
+  border: 2px groove white;
 }

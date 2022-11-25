@@ -27,22 +27,19 @@ button div {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s;
 }
 
 button:hover {
-
   cursor: pointer;
   background-color: red;
   transition-duration: 1s;
 }
 
-button:hover div{
-
+button:hover div {
+  z-index: -1;
   transition-duration: 0.7s;
-  left: 80px;
-  bottom: 23px;
+  left: 90px;
+  bottom: 25px;
   transition-timing-function: linear;
 }
-
-
-

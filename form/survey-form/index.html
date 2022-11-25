@@ -6,55 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="full">
+      <div class="title">
+        <h1>Social media хэрэглэгчдийн судалгаа</h1>
+        <p>Судалгаанд оролцсон таньд баярлалаа.</p>
+      </div>
+      <div class="box">
+        <div class="box1">
+          <div class="abs1">Ерөнхий мэдээлэл</div>
 
-      <div class="full">
-        <div class="title">
-          <h1>Social media хэрэглэгчдийн судалгаа</h1>
-          <p>Судалгаанд оролцсон таньд баярлалаа.</p>
+          <div class="space">
+            <label>Нэр</label>
+            <input type="text" id="fname" name="fname" />
+          </div>
+          <div class="space">
+            <label>И-Мэйл</label>
+            <input type="text" id="e-mail" name="e-mail" />
+          </div>
+          <div class="space">
+            <label>Нас</label>
+            <input type="text" id="age" name="age" min="14" max="99" />
+          </div>
         </div>
-        <div class="box">
 
-          <div class="box1">
+        <div class="box2">
+          <div class="abs2">Social media</div>
 
-            <div class="abs1">Ерөнхий мэдээлэл</div>
-
-            <div class="space">      
-              <label>Нэр</label>
-              <input type="text" id="fname" name="fname">
-            </div>
-            <div class="space">
-              <label>И-Мэйл</label>
-              <input type="text" id="e-mail" name="e-mail">
-            </div>
-            <div class="space">
-              <label>Нас</label>
-              <input type="text" id="age" name="age" min="14" max="99">
-            </div>
-
+          <label class="hoyr" for="age"
+            >Та өдөрт хэдэн цаг social media ашигладаг вэ?</label
+          >
+          <select name="age">
+            <option value="">1-2</option>
+            <option value="">2-3</option>
+            <option value="">3-4</option>
+          </select>
+          <div>
+            Та онлайнаар худалдан авалт хийх, дэлгүүр орж худалдан авалт хийхийн
+            альныг илүүд үздэг вэ?
           </div>
-
-          <div class="box2">
-
-            <div class="abs2">Social media</div>
-
-            <label class="hoyr" for="age">Та өдөрт хэдэн цаг social media ашигладаг вэ?</label>
-            <select name="time">
-                <option value="">1-2</option>
-                <option value="">2-3</option>
-                <option value="">3-4</option>
-            </select>
+          <div>
+            <label for="html">Онлайнаар худалдан авалт</label>
+            <input type="radio" id="html" name="fav_language" value="HTML" />
           </div>
-          <div class="box3">
-            <div class="abs3">Санал хүсэлт</div>
+          <div>
+            <label for="css">Дэлгүүр орж худалдан авалт</label>
+            <input type="radio" id="css" name="fav_language" value="CSS" />
           </div>
-          
+        </div>
+        <div class="box3">
+          <div class="abs3">Санал хүсэлт</div>
         </div>
       </div>
-
+    </div>
   </body>
 </html>
