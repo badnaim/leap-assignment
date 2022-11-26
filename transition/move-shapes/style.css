@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.box {
+  width: 800px;
+  height: 600px;
+  border: 1px solid black;
+  position: relative;
+  color: white;
+  font-weight: bold;
+}
+
+.fixed {
+  color: black;
+  margin-top: 550px;
+  margin-left: 350px;
+}
+
+/* -------------------------------------------- */
+
+.circle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  left: 300px;
+  top: 200px;
+}
+
+/* -------------------------------------------- */
+
+.ball1 {
+  background-color: blue;
+  z-index: 3;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.ball2 {
+  background-color: green;
+  z-index: 2;
+  transition-property: top, left;
+  transition-duration: 0.5s, 1.5s;
+  transition-delay: 1s, 1s;
+
+}
+
+.ball3 {
+  background-color: red;
+  z-index: 1;
+  transition-property: top, left, background-color, border-radius;
+  transition-duration: 0.5s, 1s, 1.5s, 2s;
+  transition-delay: 0s, 1s;
+}
+
+/* -------------------------------------------- */
+
+.box:hover .ball1 {
+  transition: all 1s;
+  top: 0;
+  left: 0;
+}
+
+.box:hover .ball2 {
+  top: 450px;
+  left: 650px;
+
+}
+
+.box:hover .ball3 {
+  top: 0;
+  left: 650px;
+  border-radius: 0;
+  background-color: orange;
+}
